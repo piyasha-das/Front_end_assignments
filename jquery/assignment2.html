@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            #box1{
+                width:auto;
+                height:50px;
+                background-color: #d9d9d9;
+                text-align:center;
+            }
+            #box2{
+                width:auto;
+                height:200px;
+                background-color: #dfedff;
+                position:relative;
+                display:none;
+            }
+            /* .hidden{
+                height:200px;
+                display:none;
+                background-color:#dfedff;
+                position:relative;
+            }
+            .hidden .open{
+                display:block;
+            } */
+            /* .hidden{
+                display:none;
+            } */
+            #text{
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div id="box1"><a id="link" href="javascript:void(0)">click me to slide down panel</a></div> -->
+        <div id="box1">click me to slide down panel</div>
+        <div id="box2"><div id="text">Hello World!</div></div>
+        <script>
+            $(document).ready(function() {
+                // $('#box2').addClass("hidden");
+                $("#box1").click(function() {
+                    // $("#box2").find("hidden").toggleClass("open");
+                    // $('#box2').css('display','block').hide();
+                    // $('#box2').removeClass("hidden").slideDown();
+                    // $('#box2').hide();
+                    $('#box2').slideDown();
+                });
+            });
+        </script>
+    </body>
+</html>

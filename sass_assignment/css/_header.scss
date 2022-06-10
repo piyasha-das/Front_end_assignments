@@ -1,0 +1,52 @@
+@mixin bg-color($value){
+    background-color:$value;
+}
+#header{
+    width:100%; 
+   margin:auto;
+   padding:0;
+    @include bg-color(white);
+   float:left;
+   ul{
+       float:left;
+   }
+   li{
+    display:inline-block;
+    font-size:250px;
+    }
+    #outerheadercontent{
+        width:1000px;
+        height:70px;
+        margin:auto;
+        padding-bottom:0;
+        #innerheader1{
+            margin:auto;
+            float:left;
+         }
+        #innerheader2{
+            float:right;
+            li{
+                a{
+                    text-decoration:none;
+                    padding:30px 30px;
+                    font-size:10px;
+                    color:#343a40;
+                    &:hover{
+                        @include bg-color(#d9d9d9);
+                    }
+                }
+                #choose {
+                    border:none;color:#343a40;font-size:10px;
+                    option{
+                        a{
+                            &:hover{
+                                @include bg-color(#d9d9d9);
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+     }
+}

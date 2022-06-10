@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $('#submit').click(function(){
+                    var x = $('#fname').val();
+                    var y=$('#lname').val();
+                    if(x=="" || y==""){
+                        alert("Please fill all the fields");
+                    }
+                })
+            });
+        </script>
+        <form id="sform">
+            <label>Firstname</label><br>
+            <input type="text" id="fname" value="Mickey"><br>
+            <label>Lastname</label><br>
+            <input type="text" id="lname" value="Mouse"><br>
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>

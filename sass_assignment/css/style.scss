@@ -1,0 +1,19 @@
+#container{
+    overflow:auto;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+@import "header";
+@import "outercontent1";
+@import "outercontent2";
+@import "outercontent3";
+@import "outercontent4";
+@import "outercontent5";
+@import "outercontent6";
+@import "outercontent7";
+@import "outercontent8";
+@import "footer";

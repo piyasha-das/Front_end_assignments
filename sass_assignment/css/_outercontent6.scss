@@ -1,0 +1,91 @@
+%measurement{
+    width:100%;
+    margin:0 auto;
+    padding:0;
+}
+@mixin bg-color($value){
+    background-color:$value;
+}
+#outercontent6{
+    @extend %measurement;
+    @include bg-color(#d9d9d9);
+    float:left;
+    #content6{
+		width:100%;
+		max-width:1000px;
+		margin:0 auto;
+		margin-top:50px;
+		margin-bottom:50px;
+		padding:0;
+        @include bg-color(#d9d9d9);
+        h2{
+            padding:0;
+            margin:0 auto;
+            color:#343a40;
+            font-size:50px;
+            font-weight:50;
+            text-align:center;
+        }
+        p{
+            color:#343a40;
+            text-align:center;
+        }
+        .box{
+            width:30%;
+            height:380px;
+            float:left;
+            padding:20px 20px;
+            margin:10px 10px;
+            @include bg-color(white);
+            -border:1px solid black;
+            h2{
+                color:#343a40;
+                text-align:center;
+                font-size:30px;
+                font-family:'Open Sans', sans-serif;
+                font-weight:600;
+            }
+            p{
+                color:#d9d9d9;
+                text-align:center;
+                font-size:20px;
+                @include bg-color(white);
+                font-family:'Open Sans', sans-serif;
+                font-weight:300;
+            }
+            li{
+                text-align:center;
+                list-style-type: none;
+                font-size:20px;
+                font-family:'Open Sans', sans-serif;
+                font-weight:300;
+            }
+            .shadow{
+                color:transparent;
+                text-shadow:2px 2px 1px rgba(194,185,185);
+            }
+            .btn1{
+                height:50px;
+                width:200px;
+                @include bg-color(transparent);
+                color:#343a40;
+                text-decoration:none;
+                padding:10px 10px;
+                border:2px solid white;
+                margin:0 auto;
+                border-radius:25px;
+                border:1px solid #343a40;
+                &:hover{
+                    @include bg-color(#d0a904);
+                    border:none;
+                }
+            }
+            .cover{
+                clear:both;
+                text-align:center;
+                margin:auto;
+                padding:0;
+            }
+        }
+	}
+}

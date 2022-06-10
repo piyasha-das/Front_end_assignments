@@ -1,0 +1,171 @@
+#text{
+    display:none;
+    width:100%;
+}
+.searchbar{
+    position:relative;
+}
+.close{
+    display:none;
+    position:absolute;
+    right:0;
+    top:0;
+}
+*{
+    box-sizing:border-box;
+}
+#header{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.picture{
+    background-image: url('images/home-banner-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+ @media screen and (max-width:912px){
+    .picture{
+        background-image:url('images/home-banner-1-mobile-portrait.jpg');
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:100%;
+    }
+}
+.parent{
+    /* position:relative; */
+    text-align: center;
+}
+.child{
+    /* position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%; */
+    display:inline-block;
+}
+div.portion:hover{
+    background-color: rgba(45, 45, 185, 0.87) !important;
+    display:block;
+}
+div.portion:hover .text-primary{
+    color:white !important;
+}
+/* .cus-tab{
+    text-align:center !important;
+    padding-top:40px !important;
+    padding-bottom:20px !important;
+    padding-left:10px !important;
+    padding-right:10px !important;
+} */
+.ss{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+.dd{
+    width:12% !important;
+    word-break:breakword;
+    font-size:14px;
+    text-align: center;
+}
+/* .cust-tab .bg-white{
+    word-break: breakword !important;
+    font-size:14px !important;
+} */
+.cus-tab:hover{
+    background-color: rgba(13, 110, 253, 0.99)!important;
+    color:white !important;
+}
+.cus-tab:hover::after{
+    content:"";
+    width: 0;
+	height: 0;
+    left:50%;
+    top:100%;
+    /* bottom:0; */
+    position:absolute;
+    transform:translate(-50%,-50%);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 30px solid #0d6efd;
+}
+h4.cc{
+    text-decoration-color:black !important;
+}
+.design{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.position{
+    position:absolute;
+    left:15%;
+    bottom:0;
+}
+.size{
+    padding-bottom:40px;
+    height:100%;
+}
+.size1{
+    padding-bottom:60px;
+    height:100%;
+}
+.unique{
+    border-radius: 20px!important;
+    width: 130px !important;
+}
+#logolist1{
+    display:none;
+}
+#logolist2{
+    display:none;
+}
+#logolist3{
+    display:none;
+}
+#logolist4{
+    display:none;
+}
+#logolist5{
+    display:none;
+}
+#logolist6{
+    display:none;
+}
+#logolist7{
+    display:none;
+}
+#logolist8{
+    display:none;
+}
+.view12{
+    display:none;
+}
+.view22{
+    display:none;
+}
+.view32{
+    display:none;
+}
+.view42{
+    display:none;
+}
+.view52{
+    display:none;
+}
+.view62{
+    display:none;
+}
+.arrow-down{
+    border-bottom: 5px solid blue;
+    border-left: 5px solid blue;
+    border-right: 5px solid blue;
+    bottom:0;
+    content:" ";
+    position:absolute;  
+    width:50%;
+  }

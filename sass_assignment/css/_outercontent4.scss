@@ -1,0 +1,129 @@
+%measurement{
+    width:100%;
+    margin:0 auto;
+    padding:0;
+}
+@mixin bg-color($value){
+    background-color:$value;
+}
+#outercontent4{
+    @extend %measurement;
+    @include bg-color(#d9d9d9);
+    float:left;
+    #content4{
+		width:100%;
+		max-width:1000px;
+		margin:0 auto;
+		margin-top:30px;
+		margin-bottom:30px;
+        @include bg-color(#d9d9d9);
+        h3{
+            color:#343a40;
+            font-size:40px;
+            font-weight:40;
+            padding:0;
+            margin:0;
+        }
+        p{
+            color:#343a40;
+        }
+	}
+    #menu{
+		padding:0;
+        ul{
+            margin:0;
+            padding:0;
+        }
+        li{
+            padding:0 5px;
+            display:inline-block;
+        }
+        a{
+            text-decoration:none;
+            &:hover{
+                @include bg-color(#d9d9d9);
+            }
+        }
+	}
+    .imagecontainer{
+		display:grid;
+        @include bg-color(#d9d9d9);
+		width:1000px;
+		margin:auto;
+		height:600px;
+		grid-template-rows:2fr 2fr 2fr;
+		grid-template-columns:320px 320px 320px;
+		grid-gap:20px;
+		justify-content:spaceevenly;
+	}
+    .item1{
+        @extend .item3;
+        grid-row:1/3;
+        }
+    .item2{
+        @include bg-color(#171124);
+        position: relative;
+         width: 100%;
+         &:hover{
+            .containerimage{
+                opacity:0.3;
+            }
+            .specialimage{
+                opacity:1;
+            }
+        }
+        .containerimage{
+             opacity: 1;
+            display: block;
+            width: 100%;
+             height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            
+        }
+        .specialimage{
+             transition: .5s ease;
+            opacity: 0;
+             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+             text-align: center;
+             img{
+                 margin:0 auto;
+             }
+             h4{
+                 color:white;
+                 text-align:center;
+             }
+             p{
+                 color:solid white;
+                 text-align:center;
+            }
+        }
+        }
+        .item3{
+            background-color: none;
+        }
+        .item4{
+            @extend .item3;
+        }
+        .item5{
+            @extend .item3;
+        }
+        .item6{
+            @extend .item3;
+        grid-row:2;
+        }
+        .item7{
+            @extend .item3;
+        }
+        .item8{
+            @extend .item3;
+        grid-row:2/6;
+        }
+        .item9{
+            @extend .item3;
+        }
+}

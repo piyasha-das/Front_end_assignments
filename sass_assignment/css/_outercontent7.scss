@@ -1,0 +1,101 @@
+$width:100%;
+%measurement{
+    width:100%;
+    margin:auto;
+    padding:0;
+}
+@function halfwidth($width){
+    @return calc(($width)/2);
+}
+@mixin bg-color($value){
+    background-color:$value;
+}
+#outercontent7{
+    @extend %measurement;
+    @include bg-color(#343a40);
+    position:relative;
+    background-image: url('../images/ex-1/img-3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    z-index:12;
+    float:left;
+    &:after{
+		position:absolute;
+		content:" ";
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		z-index: 0;
+         @include bg-color(rgba(0,0,50,0.623));
+		z-index:0;
+	}
+    #content7{
+		width:100%;
+		max-width:1000px;
+		height:100%;
+		margin:0 auto;
+		padding:0;
+        h5{
+            color:white;
+            padding:0;
+            margin:0;
+            text-align:center;
+        }
+        p{
+            color:white;
+            text-align:center;
+        }
+        #text7{
+            z-index:10;
+            color:white;
+            width:1000px;
+            padding:0;
+            margin:0 auto;
+            position:absolute;
+            transform:translate(-50%,-50%);
+            left:50%;
+            top:50%;
+            h2{
+                padding:0;
+                margin:0 auto;
+                font-size:50px;
+                font-weight:50;
+            }
+            .aboveportion{
+                display:block;
+                max-width:1000px;
+                width:100%;
+                margin:0 auto;
+                padding:50px 0;
+                overflow: auto;
+            }
+            .arrow{
+                @include bg-color(#28425c);
+                margin:0;
+                width:60px;
+                height:60px;
+                padding:15px 15px;
+                &:hover{
+                    @include bg-color(#d0a904);
+                }
+            }
+            #leftcorner{
+                float:left;
+                margin:0 auto;
+            }
+            #rightcorner{
+                float:right;
+                margin:0 auto;
+            }
+            .lowerportion{
+                width:halfwidth($width);
+                padding:0;
+                text-align:center;
+                float:left; 
+                padding:0 15px;
+            }
+        }
+	} 
+}

@@ -1,0 +1,197 @@
+<html>
+<head>
+<style>
+.container{
+	width:100%;
+	margin:auto;
+}
+#header{
+	background-color:#d9d9d9;
+	width:100%;
+	margin:auto;
+	padding:0;
+}
+.outerheadercontent{
+	width:1000px;
+	height:100px;
+	margin:auto;
+}
+#innerheader1{ 
+	margin:0;
+	padding-left:0;
+	padding-top:1%;
+}
+#header li{
+	display:inline-block;
+	color:blue;
+}
+#header li a{
+	text-decoration:none;
+	padding:10px 15px;
+}
+#innerheader2{
+	margin:auto;
+	float:right;
+	padding-top:30px;
+}
+#header li a:hover{
+	background-color:black;
+	color:white;
+}
+#lowerheader{
+	width:100%;
+	background-color:#06a3cc;
+	text-align:center;
+	font-size:50px;
+	color:white;
+	box-sizing:border-box;
+	margin:auto;
+}
+.new{
+	width:1000px;
+	height:200px;
+	margin:auto;
+	position:relative;
+}
+.new h1{
+	left:50%;
+	transform:translate(-50%,-50%);
+	top:50%;
+	position:absolute;
+	font-size:20px;
+	margin:0;
+}
+#outercontent{
+	width:1000px;
+	margin:auto;
+	-position:relative;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#content{
+	height:507px;
+	width:445px;
+	float:left;
+	background-color:#ffe469;
+	position:relative;
+}
+#content2{
+	height:360px;
+	width:393px;
+	background-color:#d39ed6;
+	top:20px;
+	left:-40px;
+	position:absolute;
+}
+#content3{
+	width:545px;
+	height:293px;
+	background-color:#ed8719;
+	float:left;
+	margin-left:10px;
+}
+#content3 form{
+	padding-top:30px;
+	padding-left:30px;
+}
+#content4{
+	width:545px;
+	height:204px;
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+	background-color:#8ae33b;
+}
+#footer{
+	width:100%;
+	float:left;
+	margin-top:10px;
+	background-color:#007694;
+}
+#innerfooter ul{
+	padding-top:15px;
+	margin:0;
+}
+#footer li{
+	color:white;
+	display:inline-block;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	clear:both;
+	border-spacing:10px;
+}
+#footer li a{
+	text-decoration:none;
+	padding-left:20px;
+	padding-right:10px;
+	border-right:2px solid white;
+}
+#innerfooter{
+	width:1000px;
+	height:85px;
+	margin:0 auto;
+	text-align:center;
+	justify-content:middle;
+}
+#footer li:last-child{
+	border-right:none;
+}
+</style> 
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<div class="outerheadercontent">
+			<img id="innerheader1"src="images/logo_2.png">
+			<ul id="innerheader2">
+				<li><a href="">Home</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Profile</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="lowerheader">
+		<div class="new">
+			<img src="images/logo_3.png" style="position:absolute;top:50%;transform:translateY(-50%);left:0px;">
+				<h1>BANNER</h1>
+			<img src="images/logo_4.png" style="position:absolute;top:50%;transform:translateY(-50%);right:0px;">
+			</div>
+	</div>
+	<div class="body">
+		<div id="outercontent">
+			<div id="content">
+				<div id="content2">
+				</div>
+			</div>
+			<div id="content3">
+				<form>
+					<input type="text" style="opacity:20%;width:300px;height:30px"><br><br>
+					<input type="text" style="opacity:20%;width:300px;height:30px"><br><br>
+					<select style="opacity:20%;width:300px;height:30px">
+						<option ></option>
+						<option>aaaaaaaaaaaaaaaaaaaaa</option>
+						<option>Bike</option>
+					</select><br><br>
+					<input type="submit" value="submit" style="opacity:20%;width:100px;height:30px">
+				</form>
+			</div>
+				<div id="content4">
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="innerfooter">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Profile</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

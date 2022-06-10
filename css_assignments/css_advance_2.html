@@ -1,0 +1,1070 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet">
+<style>
+	#container{
+		overflow:auto;
+	}
+	#header{
+		 width:100%; 
+		margin:auto;
+		padding:0;
+		background-color:white;
+		float:left;
+	}
+	#outerheadercontent{
+		width:1000px;
+		height:70px;
+		margin:auto;
+		padding-bottom:0;
+	}
+	#innerheader1{
+		margin:auto;
+		float:left;
+	}
+	#header ul{
+		float:left;
+	}
+	#header li{
+		display:inline-block;
+		font-size:250px;
+	}
+	#innerheader2 li a{
+		text-decoration:none;
+		padding:30px 30px;
+		font-size:10px;
+		color:#343a40;
+	}
+	#choose option a:hover{
+		background-color:#d9d9d9;
+	}
+	#header li a:hover{
+		background-color:#d9d9d9;
+	}
+	#innerheader2{
+		float:right;
+	}
+	#outercontent1{
+		margin:auto;
+		width:100%;
+		background-color:#343a40;
+		position:relative;
+		background-image: url(images/ex-1/img-1.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		color:white;
+		position: relative;
+		z-index:12;
+		float:left;
+	}
+	#content1{
+		margin:0 auto;
+		width:100%;
+		max-width:1000px;
+		  height:100%;  
+		padding:60px 0;
+	}
+	#outercontent1::after {
+ 	 position: absolute;
+ 	 content: " ";
+ 	 top: 0;
+ 	 left: 0;
+ 	 width: 100%;
+ 	 height: 100%; 
+	 z-index: 0;
+ 	 background-color:  rgba(0, 0, 50, 0.623);
+	}
+	#text1 h2{
+		text-align:center;
+		color:white;
+		margin:0 auto;
+		z-index:10;
+		padding:0;
+		font-size:50px;
+		font-weight:50;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+	}
+	#text1 h2 pre{
+		font-family:'Open Sans', sans-serif ;
+		font-weight:600;
+	}
+	#text1 > pre{
+		margin:0 auto;
+		padding:0 15px;
+		font-family:arial;
+		color:white;
+		text-align:center;
+		font-size:20px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	#new{
+		margin:0 auto;
+		padding:0;
+		text-align: center;
+		width:1000px;
+		margin-top:2%;
+		color:solid white;
+	}
+	#bottomimage{
+		width:100%;
+		max-width:1000px;
+		position:absolute;
+		padding:0px 480px;
+		bottom:-90px;
+		z-index:15;
+	}
+	#text1{
+		z-index:10;
+		color:white;
+		width:1000px;
+		position:absolute;
+		transform:translate(-50%,-50%);
+		top:50%;
+		left:50%;
+	}
+	input:hover{
+		background-color:#d0a904;
+		border:3px #d0a904;
+	}
+	.buttondesign{
+	 background-color: transparent;
+	 font-size:20px;
+	 border-radius:25px;
+ 	 border: 3px solid white;
+ 	 color:  white;
+ 	 padding: 15px 50px;
+ 	 text-align: center;
+ 	 text-decoration: none;
+ 	 display: inline-block;
+ 	 font-size: 16px;
+	  margin:auto;
+	}
+	#outercontent2{
+		width:100%;
+		margin:auto;
+		padding:0;
+		background-color: #d9d9d9;
+		float:left;
+	}
+	#content2{
+		width:100%;
+		max-width:1000px;
+		margin:0 auto;
+		padding:50px 0px;
+		background-color: #d9d9d9;
+	}
+	#text2{
+		width:40%;
+		color:#343a40;
+		float:left;
+	}
+	#text2 h2{
+		font-size:40px;
+		font-weight:100;
+		display:block;
+	}
+	*{
+		box-sizing:border-box;
+	}
+	#picture{
+		float:left;
+		width:60%;
+		padding:40px 0px 40px 100px;
+	}
+	#id1{
+		list-style-image:url('images/icon-1.png');
+	}
+	#id2{
+		list-style-image:url('images/icon-2.png')
+	}
+	#id3{
+		list-style-image:url('images/icon-3.png')
+	}
+	#outercontent3{
+		width:100%;
+		margin:auto;
+		padding:0;
+		background-color:#343a40;
+		position:relative;
+		background-image: url(images/ex-1/img-2.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		color:white;
+		z-index:12;
+		float:left;
+	}
+	#content3{
+		width:100%;
+		max-width:1000px;
+		height:100%;  
+		margin:0 auto;
+		padding:0;
+	}
+	#outercontent3::after{
+		position:absolute;
+		content:" ";
+		top:0;
+		left:0;
+		 height:100%; 
+		width:100%;
+		z-index: 0;
+ 	    background-color:  rgba(0, 0, 50, 0.5);
+		z-index:0;
+	}
+	#text3{
+		z-index:10;
+		color:white;
+		width:1000px;
+		  position:absolute; 
+		  transform:translate(-50%,-50%);
+		  left:50%;
+		  top:50%;
+	}
+	#text3 h2{
+		font-size:40px;
+		font-weight:50;
+		text-align:center;
+	}
+	#text3 h2 pre{
+		font-family: 'Open Sans', sans-serif;
+		font-weight:500;
+	}
+	.section{
+		width: 33.33%;
+		text-align:center;
+		float:left;
+		padding:0 15px;
+	}
+	.circle{
+		width:100px;
+		height:100px;
+		border-radius:50%;
+		background-color:rgba(0,0,0,0.3);
+		margin:0 auto;
+		position:relative;
+	}
+	.inside{
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin:0 auto;
+		transform:translate(-50%,-50%);
+	}
+	.section h3{
+		text-align:center;
+		padding-top:10px;
+	}
+	.section p{
+		text-align:center;
+	}
+	.section4{
+		clear:both;
+		text-align:center;
+		margin:auto;
+		margin-top:350px;
+		padding:0;
+	}
+	.btn{
+		height:50px;
+		width:200px;
+		background-color:transparent;
+		color:white;
+		text-decoration:none;
+		padding:10px 10px;
+		border:2px solid white;
+		margin:0 auto;
+		border-radius:25px;
+	}
+	.btn:hover{
+		background-color:#d0a904;
+		border:#d0a904;
+	}
+	#outercontent4{
+		width:100%;
+		margin:auto;
+		padding:0;
+		background-color: #d9d9d9;
+		float:left;
+	}
+	#content4{
+		width:100%;
+		max-width:1000px;
+		margin:0 auto;
+		margin-top:30px;
+		margin-bottom:30px;
+		background-color: #d9d9d9;
+	}
+	#content4 h3{
+		color:#343a40;
+		font-size:40px;
+		font-weight:40;
+		padding:0;
+		margin:0;
+	}
+	#content4 p{
+		color:#343a40;
+	}
+	#menu{
+		/* -float:left; */
+		font-family: gotham;
+		padding:0;
+	}
+	#menu ul{
+		margin:0;
+		padding:0;
+	}
+	#menu li{
+		padding:0 5px;
+		display:inline-block;
+	}
+	#menu a{
+		text-decoration:none;
+	}
+	#menu a:hover{
+		background-color: #d9d9d9;
+	}
+	.imagecontainer{
+		display:grid;
+		background-color:#d9d9d9;
+		width:1000px;
+		margin:auto;
+		height:600px;
+		grid-template-rows:2fr 2fr 2fr;
+		grid-template-columns:320px 320px 320px;
+		grid-gap:20px;
+		justify-content:spaceevenly;
+	}
+	.item1{
+background-color:none;
+grid-row:1/3;
+}
+.item2{
+background-color:none;
+}
+.item3{
+background-color:none;
+}
+.item4{
+background-color:none;
+}
+.item5{
+background-color:none;
+}
+.item6{
+background-color:none;
+grid-row:2;
+}
+.item7{
+background-color:none;
+}
+.item8{
+background-color:none;
+grid-row:2/6;
+}
+.item9{
+background-color:none;
+}
+	#outercontent5{
+		width:100%;
+		margin:auto;
+		padding:0;
+		background-color:#343a40;
+		position:relative;
+		background-image: url(images/ex-1/img-4.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		color:white;
+		z-index:12;
+		float:left;
+	}
+	#content5{
+		width:100%;
+		max-width:1000px;
+		margin:0 auto;
+		padding:250px 0px;
+	}
+	#outercontent5::after{
+		position:absolute;
+		content:" ";
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		z-index: 0;
+ 	    background-color:  rgba(0, 0, 50, 0.623);
+		z-index:0;
+	}
+	#text5{
+		z-index:10;
+		color:white;
+		width:1000px;
+		padding:0;
+		position:absolute;
+		margin:0 auto;
+	}
+	.portion{
+		width: 25%;
+		padding:0;
+		text-align:center;
+		float:left;
+		padding:0 15px;
+	}
+	.portion h5{
+		margin:0;
+		padding:0 auto;
+	}
+	.lower:hover{
+		color: #d0a904;
+	}
+	#outercontent6{
+		width:100%;
+		margin:0 auto;
+		padding:0;
+		background-color: #d9d9d9;
+		float:left;
+	}
+	#content6{
+		width:100%;
+		max-width:1000px;
+		margin:0 auto;
+		margin-top:50px;
+		margin-bottom:50px;
+		padding:0;
+		 background-color: #d9d9d9; 
+	}
+	#content6 h2{
+		padding:0;
+		margin:0 auto;
+		color:#343a40;
+		font-size:50px;
+		font-weight:50;
+		text-align:center;
+	}
+	#content6 p{
+		color:#343a40;
+		text-align:center;
+	}
+	.box{
+		width:30%;
+		height:380px;
+		float:left;
+		padding:20px 20px;
+		margin:10px 10px;
+		background-color: white;
+		-border:1px solid black;
+	}
+	#content6 .box h2{
+		color:#343a40;
+		text-align:center;
+		font-size:30px;
+		font-family:'Open Sans', sans-serif;
+		font-weight:600;
+	}
+	#content6 .box p{
+		color:#d9d9d9;
+		text-align:center;
+		font-size:20px;
+		background-color:white; 
+		font-family:'Open Sans', sans-serif;
+		font-weight:300;
+	}
+	.box li{
+		text-align:center;
+		list-style-type: none;
+		/* color:#343a40; */
+		font-size:20px;
+		font-family:'Open Sans', sans-serif;
+		font-weight:300;
+	}
+	.shadow{
+		color:transparent;
+		text-shadow:2px 2px 1px rgba(194,185,185);
+	}
+	.btn1{
+		height:50px;
+		width:200px;
+		background-color:transparent;
+		color:#343a40;
+		text-decoration:none;
+		padding:10px 10px;
+		border:2px solid white;
+		margin:0 auto;
+		border-radius:25px;
+		border:1px solid #343a40;
+	}
+	.btn1:hover{
+		background-color:#d0a904;
+		border:none;
+	}
+	.cover{
+		clear:both;
+		text-align:center;
+		margin:auto;
+		padding:0;
+	}
+	#outercontent7{
+		width:100%;
+		margin:auto;
+		padding:0;
+		background-color:#343a40;
+		position:relative;
+		background-image: url(images/ex-1/img-3.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		color:white;
+		z-index:12;
+		float:left;
+	}
+	#content7{
+		width:100%;
+		max-width:1000px;
+		height:100%;
+		margin:0 auto;
+		padding:0;
+	}
+	#outercontent7:after{
+		position:absolute;
+		content:" ";
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		z-index: 0;
+ 	    background-color:  rgba(0, 0, 50, 0.623);
+		z-index:0;
+	}
+	#text7{
+		z-index:10;
+		color:white;
+		width:1000px;
+		padding:0;
+		margin:0 auto;
+		position:absolute;
+		transform:translate(-50%,-50%);
+		left:50%;
+		top:50%;
+	}
+	#text7 h2{
+		padding:0;
+		margin:0 auto;
+		font-size:50px;
+		font-weight:50;
+	}
+	.aboveportion{
+		display:block;
+		max-width:1000px;
+		width:100%;
+		margin:0 auto;
+		padding:50px 0;
+		overflow: auto;
+	}
+	.arrow{
+		background-color:#28425c;
+		margin:0;
+		width:60px;
+		height:60px;
+		padding:15px 15px;
+	}
+	.arrow:hover{
+		background-color: #d0a904;
+	}
+	#leftcorner{
+		float:left;
+		margin:0 auto;
+	}
+	#rightcorner{
+		float:right;
+		margin:0 auto;
+	}
+	.lowerportion{
+		width: 50%;
+		padding:0;
+		text-align:center;
+		float:left; 
+		padding:0 15px;
+	}
+	#content7 h5{
+		color:white;
+		padding:0;
+		margin:0;
+		text-align:center;
+	}
+	#content7 p{
+		color:white;
+		text-align:center;
+	}
+	#outercontent8{
+		width:100%;
+		margin:0 auto;
+		padding:0;
+		background-color: #d9d9d9;
+		float:left;
+	}
+	#content8{
+		width:100%;
+		max-width:1000px;
+		margin-top:50px;
+		margin-bottom:50px;
+		margin:0 auto;
+		padding:0;
+	}
+	#content8 h2{
+		color:#343a40;
+		font: size 100px;
+		font-weight:50;
+		text-align:left;
+		padding:0px 15px;
+	}
+	#content8 p{
+		color:#343a40;
+		text-align:left;
+		padding:0px 15px;
+	}
+	.wrapper{
+		width: 30%;
+		text-align:center;
+		float:left;
+		padding:0 15px;
+		background-color: white;
+		height:450px;
+		position:relative;
+		margin:10px 10px;
+	}
+	.wrapperimage{
+		height:200px;
+		width:300px;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.wrappertext{
+		position:absolute;
+		left:0;
+		top:250px;
+	}
+	.btn2{
+		height:50px;
+		width:200px;
+		background-color:transparent;
+		color:#343a40;
+		text-decoration:none;
+		padding:10px 10px;
+		border:2px solid white;
+		margin:0 auto;
+		margin-left:5px;
+		border-radius:25px;
+		border:1px solid #343a40;
+		float:left;
+	}
+	.btn2:hover{
+		background-color:#d0a904;
+		border:none;
+	}
+	#footer{
+		width:100%;
+		margin:0 auto;
+		padding:0;
+		background-color:#3a376c;
+		float:left;
+	}
+	#outerfootercontent{
+		width:1000px;
+		margin:0 auto;
+		padding:0;
+		margin-top:30px;
+		margin-bottom:30px;
+		overflow:auto;
+	}
+	#innerfooter1{
+		float:left;
+		
+	}
+	#innerfooter2{
+		clear:both;
+		overflow:auto;
+		padding:180px 0px;
+	}
+	#innerfooter2 h3{
+		padding:0px 85px;
+	}
+	#innerfooter2 ul{
+		float:left;
+	}
+	#innerfooter2 li{
+		color:white;
+		display:block;
+		list-style-type:none;
+	}
+	.footersection{
+		width:25%;
+		margin:50px 0px;
+		overflow:auto;
+		margin:0 auto;
+		float:left;
+	}
+	.footersection h3{
+		color:white;
+	}
+	.smalllist{
+		padding:0px 46px;
+		text-align:left;
+	}
+	.btnwithimage{
+		height:50px;
+		width:200px;
+		background-color:white;
+		color:#d9d9d9;
+		text-decoration:none;
+		padding:10px 10px; 
+		border:2px solid white;
+		margin:0 auto;
+		border-radius:25px;
+		float:left;
+		font-size:25px;
+	}
+	.emailsend{
+		float:right;
+		height:30px;width:30px;
+	}
+	#lowermost{
+		position:absolute;
+		margin:0 auto;
+		color:white;
+		text-align:center;
+		 margin:250px 100px;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="outerheadercontent">
+				<img id="innerheader1" src="images/ex-1/head_logo.jpg">
+				<div id="innerheader2">
+					<ul>
+						<li><a href="">HOME</a></li>
+						<li><a href="">ABOUT</a></li>
+						<li><a href="">SERVICES</a></li>
+						<li><a href="">PORTFOLIO</a></li>
+						<li><a href="">PRICE</a></li>
+						<li>
+							<select id="choose" style="border:none;color:#343a40;font-size:10px;">
+								<option><a href="">BLOG</a></option>
+							</select>
+						</li>
+					</ul>
+					<img src="images/ex-1/mail.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="outercontent1">
+			<div id="content1">
+				<div id="text1">
+					<h2><pre style="color:white;">We Will <strong>Make</strong> Your <strong>Business</strong>
+Great Again</pre></h2>
+					<pre>Qnsectetur adipicising elit.Impedit repudiandae nisi
+maiores dolore dolor.</pre>
+					<div id="new">
+						<input type="button" value="CONTACT US" class="buttondesign">
+						<input type="button" value="DISCOVER NOW" class="buttondesign">
+					</div>
+					<div id="bottomimage">
+						<img src="images/ex-1/icons/darrow.png" style="height:20px;width:20px;opacity:0.623">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="outercontent2">
+			<div id="content2">
+				<div id="text2">
+					<h2>Hello <b>World</b></h2>
+					<pre>Eeligendi autem consequatur cupiditate deleniti officiis 
+aliquid repellat provident ut rerum excepturi, ex iure veritatis.
+numquam quis voluptate tempora.Aliquam voluptatibus placeat,
+maiores!
+					</pre>
+					<ul>
+						<li id="id1">Exploring Your area of activity</li>
+						<li id="id2">competitive analysis</li>
+						<li id="id3">Do the work in time</li>
+					</ul>
+				</div>
+				<div id="picture">
+					<img src="images/ex-1/img-3.jpg">
+				</div>
+		</div>
+	</div>
+		<div id="outercontent3">
+			<div id="content3">
+				<div id="text3">
+					<h2><pre>some of our <strong>best services</strong>
+to solve your problem</h2></pre></h2>
+					<div class="section">
+						<div class="circle">
+							<img class="inside" src="images/ex-1ppp/pics/icons/i-message.svg" style="width:50px;height:50px;">
+						</div>
+						<h3>Digital Marketing</h3>
+						<p>lorem ipsum dolor sit amet,consectetur adipicising 
+						elit.Ex cupiditate pariatur natus,laborisum!</p>
+					</div>
+					<div class="section">
+						<div class="circle">
+							<img class="inside" src="images/ex-1ppp/pics/icons/i-feature.svg" style="width:50px;height:50px;">
+						</div>
+						<h3>Web Development</h3>
+						<p>lorem ipsum dolor sit amet,consectetur adipicising 
+						elit.Ex cupiditate pariatur natus,laborisum!</p>
+					</div>
+					<div class="section">
+						<div class="circle">
+							<img class="inside" src="images/ex-1ppp/pics/icons/i-feature.svg" style="width:50px;height:50px;">
+						</div>
+						<h3>UI/UX Design</h3>
+						<p>lorem ipsum dolor sit amet,consectetur adipicising 
+						elit.Ex cupiditate pariatur natus,laborisum!</p>
+					</div>
+					<div class="section4">
+						<a class="btn">ORDER A SERVICE</a>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div id="outercontent4">
+		<div id="content4">
+			<h3><strong>Good design </strong>is obvious</h3>
+			<h3>Great design is transparent</h3>
+			<p><strong>About joe</strong> <img src="images/copyright.png" style="height:10px;width:10px;margin-top:3px;">graphic designer,digital literacy teacher</p>
+			<div id="menu">
+				<ul>
+					<li><a href="">SHOW ALL</a></li>
+					<li><a href="">DESIGN</a></li>
+					<li><a href="">CODE</a></li>
+					<li><a href="">ART</a></li>
+				</ul>
+			</div>
+			<div class="imagecontainer">
+				<div class="item1"><img src="images/ex-1/12-min.jpg" style="height:380px;width:320px"></div>
+				<div class="item2"><img src="images/project_title.png	" style="height:180px;width:320px;"></div>
+				<div class="item3"><img src="images/ex-1/2-min.jpg" style="height:180px;width:320px"></div>
+				<div class="item4"><img src="images/ex-1/2-min.jpg" style="height:180px;width:320px"></div>
+				<div class="item5"><img src="images/ex-1/2-min.jpg" style="height:180px;width:320px"></div>
+				<div class="item6"><img src="images/ex-1/2-min.jpg" style="height:180px;width:320px"></div>
+				<div class="item7"></div>
+				<div class="item8"><img src="images/ex-1/12-min.jpg" style="height:380px;width:320px"></div>
+				<div class="item9"></div>
+			</div>
+		</div>
+	</div>
+	<div id="outercontent5">
+		<div id="content5">
+			<div id="text5">
+				<div class="portion">
+					<div class="circle">
+						<img class="inside" src="images/ex-1ppp/pics/icons/i-team.svg" style="width:50px;height:50px;">
+					</div>
+					<div class="lower">
+						<h5>Unique customers:</h5>
+						<h2>3519+</h2>
+					</div>
+				</div>
+				<div class="portion">
+					<div class="circle">
+						<img class="inside" src="images/ex-1ppp/pics/icons/i-shield.svg" style="width:50px;height:50px;">
+					</div>
+					<div class="lower">
+						<h5>completed projects:</h5>
+						<h2>3519+</h2>
+					</div>
+				</div>
+				<div class="portion">
+					<div class="circle">
+						<img class="inside" src="images/ex-1/icons/i-diamond.svg" style="width:50px;height:50px;">
+					</div>
+					<div class="lower">
+						<h5>Happy Users:</h5>
+						<h2>3519+</h2>
+					</div>
+				</div>
+				<div class="portion">
+					<div class="circle">
+						<img class="inside" src="images/ex-1ppp/pics/icons/i-trophy.svg" style="width:50px;height:50px;">
+					</div>
+					<div class="lower">
+						<h5>Honors and awards:</h5>
+						<h2>3519+</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="outercontent6">
+		<div id="content6">
+			<h2>Flexible <strong>Pricing</strong> Plans</h2>
+			<p>Dolor sit Mollitia harum ea ut eaque velit.</p>
+		<div class="box">
+			<h2>Trial version</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<h2>free</h2>
+			<ul>
+				<li>500 gb drive space</li>
+				<li>Unlimited messages</li>
+				<li class="shadow">Free email address</li>
+				<li class="shadow">Friendly support</li>
+			</ul>
+			<div class="cover">
+				<a class="btn1">Download</a>
+			</div>
+		</div>
+		<div class="box">
+			<h2>Regular</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<h2>$19/month</h2>
+			<ul>
+				<li>500 gb drive space</li>
+				<li>Unlimited messages</li>
+				<li>Free email address</li>
+				<li class="shadow">Friendly support</li>
+			</ul>
+			<div class="cover">
+				<a class="btn1">Purchase</a>
+			</div>
+		</div>
+		<div class="box">
+			<h2>Extended</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<h2>$29/month</h2>
+			<ul>
+				<li>500 gb drive space</li>
+				<li>Unlimited messages</li>
+				<li>Free email address</li>
+				<li>Friendly support</li>
+			</ul>
+			<div class="cover">
+				<a class="btn1">Purchase</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="outercontent7">
+		<div id="content7">
+			<div id="text7"> 
+				<div class="aboveportion">
+					<div id="leftcorner">
+						<h2><strong>Testimonials</strong> About Us</h2>
+						<p>Dolor sit Mollitia harum ea ut eaque velit.</p>
+					</div>
+					<div id="rightcorner">
+						<img class="arrow" src="images/ex-1/icons/larrow.png">
+						<img class="arrow" src="images/ex-1/icons/rarrow.png">
+					</div>
+				</div>
+				<div class="aboveportion">
+					<div class="lowerportion">
+						<img src="images/ex-1/t-1.jpeg" style="width:100px;height:100px;border-radius:50%;">
+						<h2>Robert Newmen</h2>
+						<h5>Microsoft corporation</h5>
+						<p>Dolor sit amet consectetur adipisicing elit.Dolor sit Mollitia harum ea ut eaque velit.
+Ex rem provident nobis at deserunt,dolores blanditiis vero aut.Fuga ab quisquam aliquid eius vitae!Dolor sit Mollitia harum ea ut eaque velit.
+						</p>
+					</div>
+					<div class="lowerportion">
+						<img class="round" src="images/ex-1/t-2.jpeg" style="width:100px;height:100px; border-radius:50%;">
+						<h2>Robert Newmen</h2>
+						<h5>Space X</h5>
+						<p>Dolor sit amet consectetur adipisicing elit.Dolor sit Mollitia harum ea ut eaque velit.
+Ex rem provident nobis at deserunt,dolores blanditiis vero aut.Fuga ab quisquam aliquid eius vitae!Dolor sit Mollitia harum ea ut eaque velit.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="outercontent8">
+		<div id="content8">
+			<h2>Latest <strong>blog</strong> posts</h2>
+			<p>Dolor sit Mollitia harum ea ut eaque velit.</p>
+			<div class="wrapper">
+				<img class="wrapperimage" src="images/ex-1/img-2.jpg">
+				<div class="wrappertext">
+					<h3>Fuga ab quisquam culpa aliquid eius vitae.</h3>
+					<p>Delectus culpa in consequuntur nemo non reprehenderit repellat deleniti sunt..</p>
+					<div class="btn2">READ MORE</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<img class="wrapperimage" src="images/ex-1/img-2.jpg">
+				<div class="wrappertext">
+					<h3>Fuga ab quisquam culpa aliquid eius vitae.</h3>
+					<p>Delectus culpa in consequuntur nemo non reprehenderit repellat deleniti sunt..</p>
+					<div class="btn2">READ MORE</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<img class="wrapperimage" src="images/ex-1/img-2.jpg">
+				<div class="wrappertext">
+					<h3>Fuga ab quisquam culpa aliquid eius vitae.</h3>
+					<p>Delectus culpa in consequuntur nemo non reprehenderit repellat deleniti sunt..</p>
+					<div class="btn2">READ MORE</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="outerfootercontent">
+			<img id="innerfooter1" src="images/ex-1/logo-footer.jpg">
+			<div id="innerfooter2">
+				<div class="footersection">
+					<h3>Company</h3>
+						<div class="smalllist">
+							<ul>
+								<li>ABOUT</li>
+								<li>SUPPORT</li>
+								<li>PRESS</li>
+								<li>LEGAL & PRIVACY</li>
+							</ul>
+						</div>
+				</div>
+				<div class="footersection">
+					<h3>Quick Links</h3>
+						<div class="smalllist">
+							<ul>
+								<li>NEWS</li>
+								<li>CONTACT US</li>
+								<li>FAQ</li>
+							</ul>
+						</div>
+				</div>
+				<div class="footersection">
+					<h3>social</h3>
+						<div class="smalllist">
+							<ul>
+								<li>FACEBOOK</li>
+								<li>GOOGLE+</li>
+								<li>TWITTER</li>
+								<li>INSTAGRAM</li>
+							</ul>
+						</div>
+				</div>
+				<div class="footersection">
+					<h3>Subscribe newsletter</h3>
+					<div class="smalllist">
+						<div class="btnwithimage">
+							email
+							<img class="emailsend" src="images/emailsend.png">
+						</div>
+					</div>
+				</div>
+				<div id="lowermost">
+					<p>COPYRIGHT <img src="images/copyright.png" style="height:10px;width:10px;margin-top:3px;"> ALL RIGHTS RESERVED LATE 2018 | 
+					DESIGN AND DEVELOPMENT BY MILLERDIGITALDESIGN</p>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 #header {
   width: 100%;
   margin: auto;
@@ -185,13 +189,13 @@
   padding: 40px 0px 40px 100px;
 }
 #outercontent2 #id1 {
-  list-style-image: url("../images/icon-1.png");
+  list-style-image: url("../images/icon-1.PNG");
 }
 #outercontent2 #id2 {
-  list-style-image: url("../images/icon-2.png");
+  list-style-image: url("../images/icon-2.PNG");
 }
 #outercontent2 #id3 {
-  list-style-image: url("../images/icon-3.png");
+  list-style-image: url("../images/icon-3.PNG");
 }
 
 #footer, #outercontent8 #content8, #outercontent8, #outercontent7, #outercontent6, #outercontent5, #outercontent4, #outercontent3 #content3, #outercontent3, #outercontent2 {
